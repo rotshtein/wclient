@@ -1,0 +1,35 @@
+2018-03-09 11:26:11 INFO  ManagmentClient:60 - opened connection
+2018-03-09 11:26:11 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 11:26:11 INFO  ManagmentClient:68 - received: hello to you
+2018-03-09 11:26:59 INFO  ManagmentClient:60 - opened connection
+2018-03-09 11:26:59 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 11:26:59 INFO  ManagmentClient:68 - received: hello to you
+2018-03-09 11:27:52 INFO  ManagmentClient:60 - opened connection
+2018-03-09 11:27:52 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 11:27:52 INFO  ManagmentClient:68 - received: hello to you
+2018-03-09 11:27:56 INFO  ManagmentClient:68 - received: received ByteBuffer from /127.0.0.1:50304
+2018-03-09 11:28:25 INFO  ManagmentClient:81 - Connection closed by us Code: 1000 Reason: 
+2018-03-09 11:29:45 INFO  ManagmentClient:60 - opened connection
+2018-03-09 11:29:45 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 11:29:45 INFO  ManagmentClient:68 - received: hello to you
+2018-03-09 11:35:55 INFO  ManagmentClient:60 - opened connection
+2018-03-09 11:35:55 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 11:35:55 INFO  ManagmentClient:68 - received: hello to you
+2018-03-09 11:35:55 INFO  ManagmentClient:68 - received: received ByteBuffer from /127.0.0.1:50378
+2018-03-09 12:58:56 INFO  ManagmentClient:60 - opened connection
+2018-03-09 12:58:56 INFO  ManagmentClient:68 - received: Welcome to the server!
+2018-03-09 13:12:14 INFO  ManagmentClient:61 - opened connection
+2018-03-09 13:12:14 INFO  ManagmentClient:69 - received: Welcome to the server!
+2018-03-09 13:12:14 INFO  ManagmentClient:69 - received: hello to you
+2018-03-09 13:12:17 INFO  ManagmentClient:82 - Connection closed by remote peer Code: 1006 Reason: 
+2018-03-09 13:12:40 INFO  ManagmentClient:61 - opened connection
+2018-03-09 13:12:40 INFO  ManagmentClient:69 - received: Welcome to the server!
+2018-03-09 13:12:40 INFO  ManagmentClient:69 - received: hello to you
+2018-03-09 13:12:43 INFO  ManagmentClient:69 - received: received ByteBuffer from /127.0.0.1:51324
+2018-03-09 13:12:50 INFO  ManagmentClient:69 - received: received ByteBuffer from /127.0.0.1:51324
+2018-03-09 13:12:56 INFO  ManagmentClient:82 - Connection closed by us Code: 1000 Reason: 
+2018-03-10 13:50:31 INFO  ManagementClient:21 - Connected
+2018-03-10 13:50:31 INFO  ManagementClient:28 - got message: Welcome to the server!
+2018-03-10 13:51:35 INFO  ManagementClient:21 - Connected
+2018-03-10 13:51:35 INFO  ManagementClient:28 - got message: Welcome to the server!
+2018-03-10 13:51:39 INFO  ManagementClient:28 - got message: hello to you

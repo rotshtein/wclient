@@ -1,0 +1,6 @@
+compiler.descriptorFilePath=C\:\\D\\protobuf\\include\\google\\protobuf\\descriptor.proto
+compiler.enableProjectSettings=true
+compiler.protocFilePath=C\:\\D\\protobuf\\bin\\protoc.exe
+eclipse.preferences.version=1
+general.enableProjectSettings=true
+paths.directoryPaths=C\:\\eclipse-workspace\\wclient\\src
