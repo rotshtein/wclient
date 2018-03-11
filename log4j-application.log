@@ -33,3 +33,34 @@
 2018-03-10 13:51:35 INFO  ManagementClient:21 - Connected
 2018-03-10 13:51:35 INFO  ManagementClient:28 - got message: Welcome to the server!
 2018-03-10 13:51:39 INFO  ManagementClient:28 - got message: hello to you
+2018-03-10 13:59:01 INFO  ManagementClient:21 - Connected
+2018-03-10 13:59:01 INFO  ManagementClient:28 - got message: Welcome to the server!
+2018-03-10 14:24:05 INFO  ManagementClient:27 - Connected
+2018-03-10 14:24:05 INFO  ManagementClient:34 - got message: Welcome to the server!
+2018-03-10 14:24:05 INFO  ManagementClient:34 - got message: hello to you
+2018-03-10 14:24:05 INFO  ManagementClient:34 - got message: received ByteBuffer from /127.0.0.1:62708
+2018-03-10 14:24:42 INFO  ManagementClient:45 - Got header. Command = com.google.protobuf.Descriptors$EnumDescriptor@87f383f
+2018-03-10 14:27:10 INFO  ManagementClient:45 - Got header. Command = com.google.protobuf.Descriptors$EnumDescriptor@87f383f
+2018-03-10 14:28:39 INFO  ManagementClient:57 - Unknown command.
+2018-03-10 14:28:56 INFO  ManagementClient:45 - Got header. Command = com.google.protobuf.Descriptors$EnumDescriptor@87f383f
+2018-03-10 14:29:17 INFO  ManagementClient:45 - Got header. Command = HEADER
+2018-03-10 14:31:12 INFO  ManagementClient:27 - Connected
+2018-03-10 14:31:12 INFO  ManagementClient:34 - got message: Welcome to the server!
+2018-03-10 14:31:12 INFO  ManagementClient:34 - got message: hello to you
+2018-03-10 14:31:13 INFO  ManagementClient:34 - got message: received ByteBuffer from /127.0.0.1:59381
+2018-03-10 14:31:31 INFO  ManagementClient:45 - Got header. Command = HEADER
+2018-03-10 14:46:22 INFO  ManagementClient:24 - Connected
+2018-03-10 14:46:22 INFO  ManagementClient:31 - got message: Welcome to the server!
+2018-03-10 14:46:23 INFO  ManagementClient:31 - got message: hello to you
+2018-03-10 14:46:23 INFO  ManagementClient:31 - got message: received ByteBuffer from /127.0.0.1:59435
+2018-03-10 14:46:53 INFO  ManagementClient:43 - Got header. Command = RECORD
+2018-03-10 14:47:25 INFO  ManagementClient:52 - Got RecordCommand.
+2018-03-10 14:47:27 INFO  ManagementClient:53 - Frequncy = 9.5E8
+2018-03-10 14:47:35 INFO  ManagementClient:56 - Unknown command.
+2018-03-10 14:48:34 INFO  ManagementClient:24 - Connected
+2018-03-10 14:48:34 INFO  ManagementClient:31 - got message: Welcome to the server!
+2018-03-10 14:48:34 INFO  ManagementClient:31 - got message: hello to you
+2018-03-10 14:48:34 INFO  ManagementClient:31 - got message: received ByteBuffer from /127.0.0.1:59439
+2018-03-10 14:48:38 INFO  ManagementClient:43 - Got header. Command = RECORD
+2018-03-10 14:48:38 INFO  ManagementClient:52 - Got RecordCommand.
+2018-03-10 14:48:38 INFO  ManagementClient:53 - Frequncy = 9.5E8

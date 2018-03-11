@@ -6,6 +6,9 @@ import java.nio.ByteBuffer;
 import org.apache.log4j.Logger;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
+import com.google.protobuf.InvalidProtocolBufferException;
+import recorder_proto.Recorder.Header;
+import recorder_proto.Recorder.RecordCommand;
 
 class ManagementClient extends WebSocketClient
 {
@@ -30,6 +33,41 @@ class ManagementClient extends WebSocketClient
 	@Override
 	public void onMessage(ByteBuffer buffer)
 	{
+		Header h = null;
+		try
+		{
+			h = Header.parseFrom(buffer);
+			
+			if (h != null)
+			{
+				logger.info("Got header. Command = " + h.getOpcode());
+			}
+			int i = h.getOpcodeValue();
+			switch (h.getOpcode())
+			{
+			case RECORD:
+				RecordCommand r = RecordCommand.parseFrom(h.getMessageData());
+				if (r != null)
+				{
+					logger.info("Got RecordCommand.");
+					logger.info("Frequncy = " + r.getFrequency());
+				}
+				break;
+				
+			default:
+				logger.info("Unknown command.");
+				break;
+			}
+			
+			
+		}
+		catch (InvalidProtocolBufferException e)
+		{
+			logger.error("Protocol buffer Header parsing error",e);
+		}
+		
+		
+		
 		
 	}
 
@@ -47,4 +85,6 @@ class ManagementClient extends WebSocketClient
 		ex.printStackTrace();
 
 	}
+
+	
 }

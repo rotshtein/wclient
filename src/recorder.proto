@@ -34,6 +34,7 @@ message Header
 {
 	int32 sequence = 1;
 	OPCODE opcode = 2;			// Opcode
+	bytes message_data = 3;
 }
 
 
@@ -41,79 +42,74 @@ message Header
 // 
 message SpectrumCommand
 {
-	Header header = 1;
-	double frequency = 2;			// Central frequency in Hz. legal values are 950,000-2,150,000
-	double rate = 3;				// sampling rate in Hz - default 100e6
-	string filename = 4;			// The pull path for the spectrum pairs in - file location and name
+	double frequency = 1;			// Central frequency in Hz. legal values are 950,000-2,150,000
+	double rate = 2;				// sampling rate in Hz - default 100e6
+	string filename = 3;			// The pull path for the spectrum pairs in - file location and name
 }
 
 /*****************************************************************************************************************************/
 // 
 message RecordCommand
 {
-	Header header = 1;
-	double frequency = 2;			// Central frequency in Hz. legal values are 950,000-2,150,000
-	double rate = 3;				// sampling rate in Hz - default 100e6
-	double gain = 4;				// gain - default is 0; can be 0-31.5
-	string filename = 5;			// The pull path for the recorded file location and name
-	double number_of_samples = 6;	// File size in samples
+	double frequency = 1;			// Central frequency in Hz. legal values are 950,000-2,150,000
+	double rate = 2;				// sampling rate in Hz - default 100e6
+	double gain = 3;				// gain - default is 0; can be 0-31.5
+	string filename = 4;			// The pull path for the recorded file location and name
+	double number_of_samples = 5;	// File size in samples
 }
 
 /*****************************************************************************************************************************/
 // 
 message PlayCommand
 {
-	Header header = 1;
-	double frequency = 3;			// Central frequency in Hz. legal values are 950,000-2,150,000
-	double rate = 4;				// sampling rate in Hz - default 100e6
-	double gain = 5;				// gain - default is 0; can be 0-31.5
-	string filename = 6;			// The pull path for the recorded file location and name
-	double number_of_samples = 7;	// File size in samples
+	double frequency = 1;			// Central frequency in Hz. legal values are 950,000-2,150,000
+	double rate = 2;				// sampling rate in Hz - default 100e6
+	double gain = 3;				// gain - default is 0; can be 0-31.5
+	string filename = 4;			// The pull path for the recorded file location and name
+	double number_of_samples = 5;	// File size in samples
 }
 
 /*****************************************************************************************************************************/
 // This command stops the current running action (spectrum, record or play)
 message StopCommand
 {
-	Header header = 1;
+
 }
 
 /*****************************************************************************************************************************/
 // This replay us sent as responce to Spectrum, Record, Play or STOP_CMD
 message Ack
 {
-	Header header = 1;
+
 }
 
 /*****************************************************************************************************************************/
 // This replay us sent as responce to Spectrum, Record, Play or STOP_CMD
 message Nack
 {
-	Header header = 1;
-	string description = 2;
+	string description = 1;
 }
 
 /*****************************************************************************************************************************/
 // This should be sent in order to get StatusReplay
 message StatusRequest
 {
-	Header header = 1;
+
 }
 
 /*****************************************************************************************************************************/
 // This replay is sent as response to StatusRequest, ss event for new warning/error or when ever the status changes, new warning 
 message StatusReplay
 {
-	Header header = 1;
-	STATUS status = 2;
-	string status_description = 3;
-	double received_samples = 4;
-	double played_samples = 5;
-	double error_samples = 6;
-	bool warning = 7;
-	string warning_message = 8;
-	int32 warning_number = 9;
-	bool error = 10;
-	string error_mMessage = 11;
-	int32 error_number = 12;
+	STATUS status = 1;
+	string status_description = 2;
+	double received_samples = 3;
+	double played_samples = 4;
+	double error_samples = 5;
+	bool warning = 6;
+	string warning_message = 7;
+	int32 warning_number = 8;
+	bool error = 9;
+	string error_mMessage = 10;
+	int32 error_number = 11;
 }
