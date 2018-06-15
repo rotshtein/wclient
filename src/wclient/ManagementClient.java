@@ -42,7 +42,7 @@ class ManagementClient extends WebSocketClient
 			{
 				logger.info("Got header. Command = " + h.getOpcode());
 			}
-			int i = h.getOpcodeValue();
+			//int i = h.getOpcodeValue();
 			switch (h.getOpcode())
 			{
 			case RECORD:
